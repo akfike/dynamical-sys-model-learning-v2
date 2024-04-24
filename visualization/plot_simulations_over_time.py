@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np  # Ensure numpy is imported
 
 # Load the dataset from CSV
-df = pd.read_csv('../data/complex_internal_dynamics_data.csv')
+df = pd.read_csv('../data/controlled_dynamics_data.csv')
 
 # Automatically detect number of states
 state_columns = [col for col in df.columns if col.endswith('(t)')]

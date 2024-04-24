@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the dataset from CSV
-df = pd.read_csv('../data/internal_dynamics_data_with_noise.csv')
+df = pd.read_csv('../data/controlled_dynamics_data.csv')
 
 # Determine the number of simulations
 num_simulations = df['simulation_id'].nunique()
