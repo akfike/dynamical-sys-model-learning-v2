@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 # Assuming that the file you want to validate against is the one with different initial sets
 # and the file is saved in the same directory or a known path
 # Adjust the file path as needed based on where the script is being run from
-test_df = pd.read_csv('../data/internal_dynamics_test_data_with_sets.csv')
+test_df = pd.read_csv('../data/internal_dynamics_data_with_sets_and_noise.csv')
 
 # Define input features (state values at time t)
 input_features = [col for col in test_df.columns if col.endswith('(t)')]
