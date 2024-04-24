@@ -37,11 +37,11 @@ A = np.array([[-1, 1], [1, -1]])
 dt = 0.01
 endTime = 20
 
-# Multiple initial conditions
+# Define a new set of multiple initial conditions
 initialSets = [
-    np.array([[-0.1, -0.1], [-0.1, 0.1], [0.1, 0.1], [0.1, -0.1]]),
-    np.array([[-0.05, -0.05], [-0.05, 0.05], [0.05, 0.05], [0.05, -0.05]]),
-    np.array([[-0.15, -0.1], [-0.15, 0.1], [0.15, 0.1], [0.15, -0.1]])
+    np.array([[-0.2, -0.2], [-0.2, 0.2], [0.2, 0.2], [0.2, -0.2]]),
+    np.array([[-0.15, -0.05], [-0.15, 0.05], [0.15, 0.05], [0.15, -0.05]]),
+    np.array([[-0.1, -0.15], [-0.1, 0.15], [0.1, 0.15], [0.1, -0.15]])
 ]
 
 # DataFrame to store data
@@ -66,5 +66,5 @@ for sim_id, initialVertices in enumerate(initialSets):
 
 # Convert to DataFrame and save
 df = pd.DataFrame(all_data)
-df.to_csv('data/internal_dynamics_data_with_sets.csv', index=False)
-print('Data saved to simulation_data.csv')
+df.to_csv('data/internal_dynamics_test_data_with_sets.csv', index=False)
+print('Data saved to data/internal_dynamics_data_with_different_sets.csv')
